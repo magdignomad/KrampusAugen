@@ -87,19 +87,20 @@ KrampusAugen/
    |  - ...
    - images/
       - IMG-3903.JPG            # Referenzfoto der Hardware
+```
 
 ## Fehlersuche
-Schwarzer Bildschirm: Verkabelung, TFT_eSPI-Setup und CS-Pin prüfen; Display ggf. mit 5 V Backlight speisen.
-Vertauschte Augen/Ausrichtung: TFT_*_ROT und Offsets in config.h justieren.
-Ruckelige Bewegung: Serielle Ausgabe deaktivieren oder Sensorwerte glätten (IRIS_SMOOTH).
-NeoPixel reagieren nicht: Stromversorgung und Datapin kontrollieren, Adafruit_NeoPixel-Bibliothek aktivieren.
+- Schwarzer Bildschirm: Verkabelung, TFT_eSPI-Setup und CS-Pin prüfen; Display ggf. mit 5 V Backlight speisen.
+- Vertauschte Augen/Ausrichtung: TFT_*_ROT und Offsets in config.h justieren.
+- Ruckelige Bewegung: Serielle Ausgabe deaktivieren oder Sensorwerte glätten (IRIS_SMOOTH).
+- NeoPixel reagieren nicht: Stromversorgung und Datapin kontrollieren, Adafruit_NeoPixel-Bibliothek aktivieren.
 
 ## Weiterführende Ressourcen
-Originalprojekt von The Last Outpost Workshop: https://github.com/thelastoutpostworkshop/ESP32LCDRound240x240Eyes
-Anleitungsvideo: https://youtu.be/pmCc7z_Mi8I
-Handbuch im Ordner manuals/ für deutschsprachige Schritt-für-Schritt-Anweisungen.
+- Originalprojekt von The Last Outpost Workshop: https://github.com/thelastoutpostworkshop/ESP32LCDRound240x240Eyes
+- Anleitungsvideo: https://youtu.be/pmCc7z_Mi8I
+- Handbuch im Ordner manuals/ für deutschsprachige Schritt-für-Schritt-Anweisungen.
 
-##Lizenz & Danksagung
+## Lizenz & Danksagung
 Basierend auf der Arbeit von The Last Outpost Workshop (siehe ESP32LCDRound240x240Eyes-main/LICENSE).
 Eigene Anpassungen und Dokumentation © 2025 KrampusAugen-Projektteam.
 Vielen Dank an die Community für Feedback, Erweiterungen und kreative Einsätze!
