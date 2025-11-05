@@ -72,7 +72,7 @@ KrampusAugen/
 |- main/                         # Ablage für eigene Experimente/Build-Artefakte
 |- manuals/
 |  |- Animierte_Augen_mit_ESP32_und_rundem_1_28_TFT-Display.pdf
-`- ESP32LCDRound240x240Eyes-main/ # Original- und angepasste Firmware
+- ESP32LCDRound240x240Eyes-main/ # Original- und angepasste Firmware
    |- README.md                  # Hinweise zum ursprünglichen Projekt
    |- LICENSE
    |- config.h                   # Zentrale Konfiguration (Pins, Features, Augen)
@@ -84,9 +84,9 @@ KrampusAugen/
    |- data/                      # Augen-Assets (*.h mit Farbtabellen)
    |  |- catEye.h
    |  |- goatEye.h
-   |  `- ...
-   `- images/
-      `- IMG-3903.JPG            # Referenzfoto der Hardware
+   |  - ...
+   - images/
+      - IMG-3903.JPG            # Referenzfoto der Hardware
 
 ## Fehlersuche
 Schwarzer Bildschirm: Verkabelung, TFT_eSPI-Setup und CS-Pin prüfen; Display ggf. mit 5 V Backlight speisen.
