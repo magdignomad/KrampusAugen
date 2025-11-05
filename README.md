@@ -63,30 +63,43 @@ Displayanzahl: TFT_COUNT und NUM_EYES für Einzel- oder Doppel-Setup setzen.
 Rotation & Position: TFT_1_ROT, TFT_2_ROT, sowie EYE_1_XPOSITION / EYE_2_XPOSITION für Gehäuse anpassen.
 Blinzel- und Pupillenverhalten: AUTOBLINK, TRACKING, IRIS_MIN/MAX nach Geschmack verändern.
 Benutzerlogik: Eigenen Code in genau einer der Dateien user*.cpp aktivieren (Schalter am Kopf der Datei von #if 0 auf #if 1 setzen). Hier können Sensoren, NeoPixel oder animierte Spezialeffekte eingebunden werden.
-Projektstruktur
 
+## Projektstruktur
+
+```text
 KrampusAugen/
-├─ ESP32LCDRound240x240Eyes-main/
-│  ├─ config.h              # zentrale Einstellungen
-│  ├─ ESP32LCDRound240x240Eyes.ino
-│  ├─ eye_functions.ino     # Rendering & Animation
-│  ├─ user.cpp              # Platz für eigene Erweiterungen
-│  ├─ user_bat.cpp          # Beispiel: Fledermaus-Auge
-│  ├─ user_xmas.cpp         # Beispiel: Weihnachts-NeoPixel
-│  └─ data/                 # Bilddaten für verschiedene Augen
-├─ main/ # Standard-Programm
-└─ manuals/
-   └─ Animierte_Augen_mit_ESP32_und_rundem_1_28_TFT-Display.pdf
-Fehlersuche
+|- README.md                     # Dieses Dokument
+|- main/                         # Ablage für eigene Experimente/Build-Artefakte
+|- manuals/
+|  |- Animierte_Augen_mit_ESP32_und_rundem_1_28_TFT-Display.pdf
+`- ESP32LCDRound240x240Eyes-main/ # Original- und angepasste Firmware
+   |- README.md                  # Hinweise zum ursprünglichen Projekt
+   |- LICENSE
+   |- config.h                   # Zentrale Konfiguration (Pins, Features, Augen)
+   |- ESP32LCDRound240x240Eyes.ino
+   |- eye_functions.ino          # Rendering-Logik
+   |- user.cpp                   # Einstiegspunkt für eigene Erweiterungen
+   |- user_bat.cpp               # Beispiel: Fledermaus-Logik
+   |- user_xmas.cpp              # Beispiel: NeoPixel-Weihnachtsmodus
+   |- data/                      # Augen-Assets (*.h mit Farbtabellen)
+   |  |- catEye.h
+   |  |- goatEye.h
+   |  `- ...
+   `- images/
+      `- IMG-3903.JPG            # Referenzfoto der Hardware
+
+## Fehlersuche
 Schwarzer Bildschirm: Verkabelung, TFT_eSPI-Setup und CS-Pin prüfen; Display ggf. mit 5 V Backlight speisen.
 Vertauschte Augen/Ausrichtung: TFT_*_ROT und Offsets in config.h justieren.
 Ruckelige Bewegung: Serielle Ausgabe deaktivieren oder Sensorwerte glätten (IRIS_SMOOTH).
 NeoPixel reagieren nicht: Stromversorgung und Datapin kontrollieren, Adafruit_NeoPixel-Bibliothek aktivieren.
-Weiterführende Ressourcen
+
+## Weiterführende Ressourcen
 Originalprojekt von The Last Outpost Workshop: https://github.com/thelastoutpostworkshop/ESP32LCDRound240x240Eyes
 Anleitungsvideo: https://youtu.be/pmCc7z_Mi8I
 Handbuch im Ordner manuals/ für deutschsprachige Schritt-für-Schritt-Anweisungen.
-Lizenz & Danksagung
+
+##Lizenz & Danksagung
 Basierend auf der Arbeit von The Last Outpost Workshop (siehe ESP32LCDRound240x240Eyes-main/LICENSE).
 Eigene Anpassungen und Dokumentation © 2025 KrampusAugen-Projektteam.
 Vielen Dank an die Community für Feedback, Erweiterungen und kreative Einsätze!
