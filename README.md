@@ -1,6 +1,7 @@
 # KrampusAugen
 
-Animierte Krampus-Augen auf Basis eines ESP32 und runden 240×240 px GC9A01-TFT-Displays. Das Projekt kombiniert die Eye-Animationen aus dem „ESP32 LCD Round Eyes“-Projekt von The Last Outpost mit eigenen Anpassungen für Krampus-Kostüme, Masken oder Requisiten.
+Animierte Krampus-Augen auf Basis eines ESP32 und runden 240×240 px GC9A01-TFT-Displays.  
+Das Projekt kombiniert die Eye-Animationen aus dem „ESP32 LCD Round Eyes“-Projekt von The Last Outpost mit eigenen Anpassungen für Krampus-Kostüme, Masken oder Requisiten.
 
 ## Inhalt
 - [Highlights](#highlights)
@@ -59,13 +60,11 @@ Alle wichtigen Einstellungen findest du in `ESP32LCDRound240x240Eyes-main/config
   ```cpp
   // #include "data/defaultEye.h"
   #include "data/goatEye.h"
-Displayanzahl: TFT_COUNT und NUM_EYES für Einzel- oder Doppel-Setup setzen.
 
-Rotation & Position: TFT_1_ROT, TFT_2_ROT, sowie EYE_1_XPOSITION / EYE_2_XPOSITION für Gehäuse anpassen.
-
-Blinzel- und Pupillenverhalten: AUTOBLINK, TRACKING, IRIS_MIN/MAX nach Geschmack verändern.
-B
-enutzerlogik: Eigenen Code in genau einer der Dateien user*.cpp aktivieren (Schalter am Kopf der Datei von #if 0 auf #if 1 setzen). Hier können Sensoren, NeoPixel oder animierte Spezialeffekte eingebunden werden.
+- Displayanzahl: TFT_COUNT und NUM_EYES für Einzel- oder Doppel-Setup setzen.
+- Rotation & Position: TFT_1_ROT, TFT_2_ROT, sowie EYE_1_XPOSITION / EYE_2_XPOSITION für Gehäuse anpassen.
+- Blinzel- und Pupillenverhalten: AUTOBLINK, TRACKING, IRIS_MIN/MAX nach Geschmack verändern.
+- Benutzerlogik: Eigenen Code in genau einer der Dateien user*.cpp aktivieren (Schalter am Kopf der Datei von #if 0 auf #if 1 setzen). Hier können Sensoren, NeoPixel oder animierte Spezialeffekte eingebunden werden.
 
 ## Projektstruktur
 
@@ -104,8 +103,6 @@ KrampusAugen/
 - Handbuch im Ordner manuals/ für deutschsprachige Schritt-für-Schritt-Anweisungen.
 
 ## Lizenz & Danksagung
-Basierend auf der Arbeit von The Last Outpost Workshop (siehe ESP32LCDRound240x240Eyes-main/LICENSE).
-
-Eigene Anpassungen und Dokumentation © 2025 KrampusAugen-Team.
-
+Basierend auf der Arbeit von The Last Outpost Workshop (siehe ESP32LCDRound240x240Eyes-main/LICENSE).  
+Eigene Anpassungen und Dokumentation © 2025 KrampusAugen-Team.  
 Vielen Dank an die Community für Feedback, Erweiterungen und kreative Einsätze!
