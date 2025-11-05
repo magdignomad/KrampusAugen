@@ -60,9 +60,12 @@ Alle wichtigen Einstellungen findest du in `ESP32LCDRound240x240Eyes-main/config
   // #include "data/defaultEye.h"
   #include "data/goatEye.h"
 Displayanzahl: TFT_COUNT und NUM_EYES für Einzel- oder Doppel-Setup setzen.
+
 Rotation & Position: TFT_1_ROT, TFT_2_ROT, sowie EYE_1_XPOSITION / EYE_2_XPOSITION für Gehäuse anpassen.
+
 Blinzel- und Pupillenverhalten: AUTOBLINK, TRACKING, IRIS_MIN/MAX nach Geschmack verändern.
-Benutzerlogik: Eigenen Code in genau einer der Dateien user*.cpp aktivieren (Schalter am Kopf der Datei von #if 0 auf #if 1 setzen). Hier können Sensoren, NeoPixel oder animierte Spezialeffekte eingebunden werden.
+B
+enutzerlogik: Eigenen Code in genau einer der Dateien user*.cpp aktivieren (Schalter am Kopf der Datei von #if 0 auf #if 1 setzen). Hier können Sensoren, NeoPixel oder animierte Spezialeffekte eingebunden werden.
 
 ## Projektstruktur
 
@@ -102,5 +105,7 @@ KrampusAugen/
 
 ## Lizenz & Danksagung
 Basierend auf der Arbeit von The Last Outpost Workshop (siehe ESP32LCDRound240x240Eyes-main/LICENSE).
-Eigene Anpassungen und Dokumentation © 2025 KrampusAugen-Projektteam.
+
+Eigene Anpassungen und Dokumentation © 2025 KrampusAugen-Team.
+
 Vielen Dank an die Community für Feedback, Erweiterungen und kreative Einsätze!
